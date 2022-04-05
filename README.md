@@ -1,2 +1,2 @@
 # blablaonica
-apk za četovanje
+ chat apk
