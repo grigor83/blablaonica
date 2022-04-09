@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Nova" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/tamnoCrvena</item>
+        <item name="colorPrimaryVariant">@color/tamnoCrvena</item>
+        <item name="colorOnPrimary">@color/crna</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#80CBC4</item>
+        <item name="colorSecondaryVariant">#80CBC4</item>
+        <item name="colorOnSecondary">@color/crna</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

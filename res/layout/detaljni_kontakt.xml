@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_detaljnog_kontakta"
+    android:background="@android:color/darker_gray"
+    >
+
+    <TextView
+        android:id="@+id/inicijali"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        android:textSize="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/slikaDetaljnogKontakta"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/imeDetaljnogKontakta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/slikaDetaljnogKontakta"
+        android:text="ime kontakta"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/brojDetaljnogKontakta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="broj kontakta"
+        android:layout_below="@id/slikaDetaljnogKontakta"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"/>
+
+</RelativeLayout>

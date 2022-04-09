@@ -1,0 +1,104 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/inicijali"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/poljeZaSliku"
+        android:scaleType="centerCrop"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/imeURetku"
+        android:layout_toRightOf="@id/poljeZaSliku"
+        android:layout_toLeftOf="@id/broj_neprocitanih_poruka"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/broj_neprocitanih_poruka"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:background="@drawable/kruzic"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/imeURetku"
+        android:layout_marginRight="15dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/posljednjaPoruka"
+        android:layout_toRightOf="@id/poljeZaSliku"
+        android:layout_toLeftOf="@id/kvacica1"
+        android:layout_below="@id/imeURetku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/kvacica1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kvacica_velika"
+        android:layout_below="@id/imeURetku"
+        android:layout_alignBottom="@id/posljednjaPoruka"
+        android:paddingTop="14dp"
+        android:paddingRight="8dp"
+        android:layout_toLeftOf="@id/vrijeme"
+        />
+
+    <ImageView
+        android:id="@+id/kvacica2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kvacica_velika"
+        android:paddingTop="14dp"
+        android:paddingRight="2dp"
+        android:layout_below="@id/imeURetku"
+        android:layout_alignBottom="@id/posljednjaPoruka"
+        android:layout_toLeftOf="@id/vrijeme"
+        />
+
+    <TextView
+        android:id="@+id/vrijeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imeURetku"
+        android:layout_alignBottom="@id/posljednjaPoruka"
+        android:paddingTop="5dp"
+        android:paddingRight="13dp"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:gravity="bottom"
+        />
+
+</RelativeLayout>

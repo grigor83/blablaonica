@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Blablaonica</string>
+    <string name="uloguj">ULOGUJ SE</string>
+    <string name="ime">Ime:</string>
+    <string name="broj">Broj:</string>
+    <string name="unesite_ime">Unesite svoje ime</string>
+    <string name="unesite_broj">Unesite svoj broj telefona</string>
+    <string name="morate_omoguciti_dozvole">Morate omoguciti dozvole za pristup memoriji!</string>
+    <string name="izaberite_instalacioni_folder">Izaberite folder za instalaciju</string>
+    <string name="upozorenje_instalacioni_folder">Morate izabrati folder za instalaciju!</string>
+    <string name="kopiranje_poruke">Tekst poruke je kopiran</string>
+    <string name="kopiraj_poruku">Kopiraj poruku</string>
+    <string name="proslijedi_poruku">Proslijedi poruku</string>
+    <string name="fajl_je_obrisan">fajl je obrisan</string>
+    <string name="trazi">Traži...</string>
+    <string name="promijeni_profilnu_sliku">Promijeni profilnu sliku</string>
+    <string name="promijeni_pozadinu">Promijeni pozadinu</string>
+
+</resources>

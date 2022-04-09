@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/dugme_za_podesavanja_pritisnuto"
+        android:state_pressed="true">
+    </item>
+
+    <item android:drawable="@drawable/dugme_za_podesavanje_netaknuto" ></item>
+</selector>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/inicijaliPosiljaoca"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/slikaPosiljaoca"
+        android:scaleType="centerCrop"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/inicijali"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/slikaKorisnika"
+        android:scaleType="centerCrop"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/kontejner_poruke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/rifres"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/strelica_za_rifres"
+            android:tint="@android:color/black"
+            android:paddingLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/poruka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="70dp"
+            android:textAlignment="textStart"
+            android:text="ovo je moja poruka"
+            android:textSize="15dp"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:textColor="@android:color/background_dark"
+            android:paddingStart="8dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="5dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_toRightOf="@id/rifres"
+            />
+
+        <ImageView
+            android:id="@+id/kvacica1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kvacica"
+            android:layout_below="@id/poruka"
+            android:layout_toLeftOf="@id/vrijeme"
+            android:layout_alignBottom="@id/vrijeme"
+            android:paddingRight="6dp"
+            />
+
+        <ImageView
+            android:id="@+id/kvacica2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kvacica"
+            android:paddingRight="2dp"
+            android:layout_below="@id/poruka"
+            android:layout_toLeftOf="@id/vrijeme"
+            android:layout_alignBottom="@id/vrijeme"
+            />
+
+        <TextView
+            android:id="@+id/vrijeme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="vrijeme je"
+            android:textSize="9dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:inputType="time"
+            android:layout_below="@id/poruka"
+            android:layout_alignEnd="@id/poruka"
+            android:layout_marginEnd="7dp"
+            android:paddingBottom="2dp"
+            android:clickable="false"
+            android:longClickable="false"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/zelena"
+            android:background="@drawable/pozadina_za_postavke"
+            android:layout_margin="10dp"
+            android:onClick="izaberi">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/osnovna"
+            android:background="@drawable/glavna_aktivnost_pozadina"
+            android:layout_margin="10dp"
+            android:onClick="izaberi">
+        </ImageView>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/zvjezdanoNebo"
+            android:background="@drawable/pozadina"
+            android:layout_margin="10dp"
+            android:onClick="izaberi">
+        </ImageView>
+
+    </TableRow>
+
+</TableLayout>

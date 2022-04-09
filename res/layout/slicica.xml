@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/inicijaliPosiljaoca"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/slikaPosiljaoca"
+        android:scaleType="centerCrop"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/inicijali"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/naslov"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/slikaKorisnika"
+        android:scaleType="centerCrop"
+        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/rotirajuca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strelica_za_rifres"
+        android:layout_toLeftOf="@id/kontejner_za_sliku"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/kontejner_za_sliku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/informacija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fajl_je_obrisan"
+            android:layout_centerInParent="true"
+            android:padding="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/slicica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/playDugme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plej_dugme"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/vrijeme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vrijeme"
+            android:textSize="11dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            android:layout_alignEnd="@id/slicica"
+            android:layout_alignBottom="@id/slicica"
+            />
+
+        <ImageView
+            android:id="@+id/kvacica1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kvacica_velika"
+            android:layout_toLeftOf="@id/vrijeme"
+            android:layout_alignBottom="@id/vrijeme"
+            android:paddingRight="6dp"
+            android:paddingBottom="6dp"
+            />
+
+        <ImageView
+            android:id="@+id/kvacica2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kvacica_velika"
+            android:layout_toLeftOf="@id/vrijeme"
+            android:layout_alignBottom="@id/vrijeme"
+            android:paddingBottom="6dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/neodredjeniProgresBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/tamnoNarandzasta"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/glavna_aktivnost_pozadina"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilna_slika"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="otvoriSliku"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ime"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/broj"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="80dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/promijeni_profilnu_sliku"
+        android:text="@string/promijeni_profilnu_sliku"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/dugme_za_slikanje_nepritisnuto"
+        android:paddingBottom="8dp"
+        android:onClick="promijeniProfilnuSliku"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/promijeni_pozadinu"
+        android:text="@string/promijeni_pozadinu"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/ikona_pozadine"
+        android:onClick="promijeniPozadinu"
+        >
+    </TextView>
+
+</LinearLayout>

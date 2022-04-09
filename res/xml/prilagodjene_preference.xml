@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+app:iconSpaceReserved="false">
+
+<com.example.nova.PreferencaIme
+    app:key="ime"
+    app:iconSpaceReserved="false"
+    android:dialogTitle="@string/unesite_ime"
+    app:layout="@layout/preferenca_ime"
+    >
+</com.example.nova.PreferencaIme>
+
+<com.example.nova.PreferencaBroj
+    app:key="broj"
+    app:iconSpaceReserved="false"
+    android:dialogTitle="@string/unesite_broj"
+    app:layout="@layout/preferenca_broj"
+    >
+</com.example.nova.PreferencaBroj>
+
+</PreferenceScreen>
